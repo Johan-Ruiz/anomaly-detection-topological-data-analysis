@@ -1,20 +1,18 @@
 ---
 layout: post
-title: Introducing Lanyon
+title: Greetings
 ---
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
 
-### Built on Poole
+## Main Problem
 
-Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Lanyon here) includes the following:
-
-* Complete Jekyll setup included (layouts, config, [404](/404), [RSS feed](/atom.xml), posts, and [example page](/about))
-* Mobile friendly design and development
-* Easily scalable text and component sizing with `rem` units in the CSS
-* Support for a wide gamut of HTML elements
-* Related posts (time-based, because Jekyll) below each post
-* Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)
+$k-$Nearest Neighbor algorithms ($k-$NN) are widely used for anomaly detection regardless their high sensibility to changes in scale parameter $k$. This shortcoming, here named 
+Local-Global Duality, occurs independently to the way nearest neighbors are selected. Topological description of data sets by persistent homology leads to a new model for 
+anomaly detection where the multi scale nature of the topological featuring brought by homology persistence solves Local-Global Duality for single anomalies. The proposed 
+anomaly detection model leans on the comparison between noteworthy topological changes inducted by single point extractions and the relative topological variation inherent 
+to the data set. The relevant changes are measured using the Bottleneck Distance to compare persistent diagrams associated to deformations in data when a single point is 
+removed. The proposed model and some $k-$NN algorithms  are compared in some experiments.
 
 ### Lanyon features
 
