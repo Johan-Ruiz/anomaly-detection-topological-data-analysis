@@ -5,9 +5,9 @@ title: Counting Pieces for Anomaly Detection
 published: true
 ---
 
-![](https://user-images.githubusercontent.com/67338552/85931694-fcd4f080-b88b-11ea-81c4-62b6b1efa17f.png){: style="text-align:center" height="250px" width="250px"}
+![](https://user-images.githubusercontent.com/67338552/85931694-fcd4f080-b88b-11ea-81c4-62b6b1efa17f.png){: style="center" height="350px" width="350px"}
 
-29 In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
+20 In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
 
 ## Main Problem
 
