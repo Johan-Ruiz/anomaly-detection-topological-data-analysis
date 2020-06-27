@@ -1,7 +1,7 @@
---
+---
 layout: page
 title: Theory
---
+---
 
 ## A New Post
 
