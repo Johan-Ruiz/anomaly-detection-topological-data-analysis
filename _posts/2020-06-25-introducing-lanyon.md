@@ -4,7 +4,7 @@ mathjax: true
 title: Greetings
 published: true
 ---
-![ghghghg]({{site.baseurl}}/_posts/portada.png)
+![]({{site.baseurl}}/_posts/portada.png)
 
 
 In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
