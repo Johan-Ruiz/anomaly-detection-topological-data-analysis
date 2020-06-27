@@ -8,7 +8,7 @@ published: true
 <center>
 ![](https://user-images.githubusercontent.com/67338552/85931694-fcd4f080-b88b-11ea-81c4-62b6b1efa17f.png){: height="450px" width="450px"}</center>
 
-20 In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
+21 In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
 
 ## Main Problem
 
