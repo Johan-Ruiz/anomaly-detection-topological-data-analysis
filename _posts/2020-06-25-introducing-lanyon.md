@@ -5,9 +5,9 @@ title: Greetings
 published: true
 ---
 
-<img src="_posts/portada.png">
+![portada.png]({{site.baseurl}}/_posts/portada.png)
 
-1 In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
+2 In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
 
 ## Main Problem
 
