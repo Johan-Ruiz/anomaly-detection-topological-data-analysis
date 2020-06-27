@@ -5,7 +5,7 @@ title: Greetings
 published: true
 ---
 
-<img style="float: right;" src="/_posts/portada.png">
+<img src="/_posts/portada.png">
 
 In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
 
