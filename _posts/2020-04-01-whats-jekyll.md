@@ -1,6 +1,6 @@
 ---
-layout: page
-title: qué es jekyll
+layout: post
+title: What's Jekyll?
 published: true
 ---
 
