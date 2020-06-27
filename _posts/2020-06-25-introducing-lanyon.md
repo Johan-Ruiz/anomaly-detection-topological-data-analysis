@@ -1,13 +1,13 @@
 ---
 layout: post
 mathjax: true
-title: Greetings
+title: Counting Pieces for Anomaly Detection
 published: true
 ---
 
-![](https://user-images.githubusercontent.com/67338552/85931694-fcd4f080-b88b-11ea-81c4-62b6b1efa17f.png)
+![](https://user-images.githubusercontent.com/67338552/85931694-fcd4f080-b88b-11ea-81c4-62b6b1efa17f.png){width=50%}
 
-3 In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
+In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
 
 ## Main Problem
 
