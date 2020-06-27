@@ -4,6 +4,8 @@ mathjax: true
 title: Greetings
 published: true
 ---
+![ghghghg]({{site.baseurl}}/_posts/portada.png)
+
 
 In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
 
@@ -15,4 +17,3 @@ anomaly detection where the multi scale nature of the topological featuring brou
 anomaly detection model leans on the comparison between noteworthy topological changes inducted by single point extractions and the relative topological variation inherent 
 to the data set. The relevant changes are measured using the Bottleneck Distance to compare persistent diagrams associated to deformations in data when a single point is 
 removed. The proposed model and some $k-$NN algorithms  are compared in some experiments.
-
