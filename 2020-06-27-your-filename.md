@@ -1,7 +1,7 @@
 ---
 layout: page
 mathjax: true
-title: Theory
+title: 1. Nearest Neighbor
 published: true
 ---
 ## $k-$NN Algorithms
