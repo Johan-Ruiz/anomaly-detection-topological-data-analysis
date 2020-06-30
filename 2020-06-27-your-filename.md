@@ -14,10 +14,10 @@ Let $\chi$ be our data set. Any $k-$NN algorithm can be characterize by the way 
 
 ### Local Outlier Factor (LOF) 
 
-LOF algorithm was desing as an improvement of the basic $k-$NN and $k^{th}-$NN algorithms whose neighborhoods are defined by proximity $N_k(x)=\left { x_i \in \chi: d(x,x_i) \leq 
-d(x,x_{i+1}) \wedge k=1,...,k \right }$
+LOF algorithm was desing as an improvement of the basic $k-$NN and $k^{th}-$NN algorithms whose neighborhoods are defined by proximity $N_k(x)=\{ x_i \in \chi: d(x,x_i) \leq 
+d(x,x_{i+1}) \wedge k=1,...,k \}$
 
-El algoritmo LOF se diseñó teniendo en cuenta que la sola idea de aislamiento no era suficiente para caracterizar una anomalía. Intuitivamente, LOF calcula nuevamente el costo en términos de distancia de cada punto para alcanzar a sus $k$ vecinos, y luego compara este costo entre los mismos vecinos en busca de una comportamiento común, de tal forma que $LOF_k(x) \approx 1$ implica que $x$ es normal. Es decir, si los $k$ vecinos de $x$, $x_1 \dots x_k$, están muy cerca de él, de tal forma que los $k$ vecinos de $x_i$ son, a su vez, muy próximos a él entonces se tendrá un comportamiento común que es estar en un grupo denso. \\
+Intuitivamente, LOF calcula nuevamente el costo en términos de distancia de cada punto para alcanzar a sus $k$ vecinos, y luego compara este costo entre los mismos vecinos en busca de una comportamiento común, de tal forma que $LOF_k(x) \approx 1$ implica que $x$ es normal. Es decir, si los $k$ vecinos de $x$, $x_1 \dots x_k$, están muy cerca de él, de tal forma que los $k$ vecinos de $x_i$ son, a su vez, muy próximos a él entonces se tendrá un comportamiento común que es estar en un grupo denso. \\
 
 Como $d(o,C_2)=d(o,x_1)<d(o,x_i)$, para $i=2 \dots k$, entonces $kd(o,x_1)<\sum_{i=1}^{k} d(o,x_i)$ y
 
