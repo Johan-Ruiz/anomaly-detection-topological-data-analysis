@@ -6,11 +6,16 @@ published: true
 ---
 ## $k-$NN Algorithms
 
-Any $k-$NN algorithm can be characterize by the way it complete the next three processes: 
+Let $\chi$ be our data set. Any $k-$NN algorithm can be characterize by the way it complete the next three processes: 
 
-- Definition of a neighborhood $N_{k}(x)$ for every point $x \in X$.
+- Definition of a neighborhood $N_{k}(x)$ for every point $x \in \chi$.
 - Computing of the average behavior inside this neighborhood by means of a certain function $f$ over $N_{k}(x)$.
 - Comparisson of the $f$ values.
+
+### Local Outlier Factor (LOF) 
+
+LOF algorithm was desing as an improvement of the basic $k-$NN and $k^{th}-$NN algorithms whose neighborhoods are defined by proximity $N_k(x)={x_i \in \chi: d(x,x_i) \leq 
+d(x,x_{i+1}) \wedge k=1,...,k}$
 
 El algoritmo LOF se diseñó teniendo en cuenta que la sola idea de aislamiento no era suficiente para caracterizar una anomalía. Intuitivamente, LOF calcula nuevamente el costo en términos de distancia de cada punto para alcanzar a sus $k$ vecinos, y luego compara este costo entre los mismos vecinos en busca de una comportamiento común, de tal forma que $LOF_k(x) \approx 1$ implica que $x$ es normal. Es decir, si los $k$ vecinos de $x$, $x_1 \dots x_k$, están muy cerca de él, de tal forma que los $k$ vecinos de $x_i$ son, a su vez, muy próximos a él entonces se tendrá un comportamiento común que es estar en un grupo denso. \\
 
