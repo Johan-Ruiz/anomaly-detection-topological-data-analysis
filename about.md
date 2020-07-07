@@ -3,6 +3,12 @@ layout: page
 title: About
 ---
 
+Graduate Math student and NPL enthusiastic. I'm currently studying about big data tools and its application to Language Processing.
+
+This website contains mostly my work about Topological Data Analysis. My CV 
+
+
+
 <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
 </p>
