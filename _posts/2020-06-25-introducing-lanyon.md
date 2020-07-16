@@ -5,20 +5,20 @@ title: Counting Pieces for Anomaly Detection
 published: true
 ---
 
-<center>
-<img src="https://user-images.githubusercontent.com/67338552/85931694-fcd4f080-b88b-11ea-81c4-62b6b1efa17f.png" height="400" width="400">
-</center>
-
 In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
 
 ### Main Problem
 
-$k-$Nearest Neighbor algorithms ($k-$NN) are widely used for anomaly detection regardless their high sensibility to changes in scale parameter $k$. This shortcoming, here named 
+$k-$Nearest Neighbors algorithms ($k-$NN) are widely used for anomaly detection regardless their high sensibility to changes in scale parameter $k$. This shortcoming, here named 
 Local-Global Duality, occurs independently to the way nearest neighbors are selected. Topological description of data sets by persistent homology leads to a new model for 
 anomaly detection where the multi scale nature of the topological featuring brought by homology persistence solves Local-Global Duality for single anomalies. The proposed 
 anomaly detection model leans on the comparison between noteworthy topological changes inducted by single point extractions and the relative topological variation inherent 
 to the data set. The relevant changes are measured using the Bottleneck Distance to compare persistent diagrams associated to deformations in data when a single point is 
 removed. The proposed model and some $k-$NN algorithms  are compared in some experiments.
+
+<center>
+<img src="https://user-images.githubusercontent.com/67338552/85931694-fcd4f080-b88b-11ea-81c4-62b6b1efa17f.png" height="400" width="400">
+</center>
 
 ### Intuition 
 
@@ -27,3 +27,5 @@ In the image above, section **a)** shows the $\chi$ data set where the *normal* 
 If a blue point is removed, the connected component assembled by normal dots will keeps its structure as a single piece. Then, as shown in **c)**, we get $\beta_0 = 2$ and roughly speaking *we have done nothing from the topological point of view.* Otherwise, the red anomalous point extraction implies a connected component extraction also. Therefore we can get *subtantial changes* in the $\chi$ cover topology by removing an anomaly and then counting the remaing pieces, computed $\beta_0 = 1$ in the last section **d)**.
 
 The previous analysis shows how anomalies can be characterize by the topological changes they induce. Formally speaking, point extraction leads to point cloud deformations whose topology is then summarized using Persistent Diagrams. Finally, applying Bottleneck Distance, each diagram is compared to the original point cloud topology. It shoud be emphasized every deformation means topological changes from the original shape, even if the come from normal points, howerever its asociated variation creates a pettern whose outline is easy to recognize and then outliers are far away from this *mean variation*.
+
+### [Nearest Neighbors Algorithms](https://johan-ruiz.github.io/anomaly-detection-topological-data-analysis/2020-06-27-your-filename/)
