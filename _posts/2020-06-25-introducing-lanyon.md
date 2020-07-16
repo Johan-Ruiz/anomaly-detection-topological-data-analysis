@@ -32,7 +32,7 @@ The previous analysis shows how anomalies can be characterize by the topological
 - $k-$NN Algorithms and how the may fail
 	- Local Outlier Factor (LOF) Algorithm
     - Connectivity-Based Outlier Factor (COF) Algorithm
-- What´s TDA and How it works
+- What´s TDA and how it works
 	- Computing Persisten Homology
-    - Bottleneck Dsitance
+    - Bottleneck Didtance
 - The model
