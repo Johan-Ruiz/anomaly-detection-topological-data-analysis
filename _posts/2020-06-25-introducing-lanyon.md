@@ -5,7 +5,7 @@ title: Counting Pieces for Anomaly Detection
 published: true
 ---
 
-In this post I am going to introduce you to TDA and how to use it as an anomaly detection tool.
+In this post I am going to introduce you the main task we solve using TDA and a brief explanation on how to use it as an anomaly detection tool.
 
 ### Main Problem
 
@@ -28,4 +28,11 @@ If a blue point is removed, the connected component assembled by normal dots wil
 
 The previous analysis shows how anomalies can be characterize by the topological changes they induce. Formally speaking, point extraction leads to point cloud deformations whose topology is then summarized using Persistent Diagrams. Finally, applying Bottleneck Distance, each diagram is compared to the original point cloud topology. It shoud be emphasized every deformation means topological changes from the original shape, even if the come from normal points, howerever its asociated variation creates a pettern whose outline is easy to recognize and then outliers are far away from this *mean variation*.
 
-### [Nearest Neighbors Algorithms](https://johan-ruiz.github.io/anomaly-detection-topological-data-analysis/2020-06-27-your-filename/)
+### Contents
+- $k-$NN Algorithms and how the may fail
+	- Local Outlier Factor (LOF) Algorithm
+    - Connectivity-Based Outlier Factor (COF) Algorithm
+- What´s TDA and How it works
+	- Computing Persisten Homology
+    - Bottleneck Dsitance
+- The model
