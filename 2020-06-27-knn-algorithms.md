@@ -1,14 +1,19 @@
 ---
 layout: page
 mathjax: true
-title: 1. Nearest Neighbor
+title: 1. Nearest Neighbor Algorithms 
 published: true
 ---
-## $k-$NN Algorithms
+## $k-$NN Algorithms and how they may fail
 
 **Pending sources.**
 
-Let $\chi$ be our data set. Any $k-$NN algorithm can be characterize by the way it complete the next three processes: 
+Let $\chi$ be our data set and $d$ an metric over $\chi$. 
+
+$k-$NN type algoritms rely on the **Similarity on Nearby Behavior** principle. An *anomaly score* is computed for every $x \in \chi$, whose value is given by some function $f$ and the set $N_k(x):= ${ $x_i \in \chi: d(x,x_i) \leq d(x,x_{i+1}) \wedge k=1,...,k $} of the $k-$nearest neighbors. The habitual common behavior is said to be strongly related to small distances within points inside big masses or cores and outliers are labeled because of their clear isolation from those cores.
+
+
+Any $k-$NN algorithm can be described by the way it complete the next three processes: 
 
 - Definition of a neighborhood $N_{k}(x)$ for every point $x \in \chi$.
 - Computing of the average behavior inside this neighborhood by means of a certain function $f$ over $N_{k}(x)$.
