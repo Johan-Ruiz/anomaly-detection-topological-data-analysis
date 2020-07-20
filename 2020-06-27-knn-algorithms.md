@@ -4,7 +4,7 @@ mathjax: true
 title: 1. Nearest Neighbor Algorithms 
 published: true
 ---
-## $k-$NN Algorithms and how they may fail
+## Small algorithms
 
 [GU16]
 [TCFC02]
@@ -20,10 +20,9 @@ Other algorithms select the threshold in a different way. For example, the $DB(n
 
 ### Local Outlier Factor (LOF) 
 
-LOF algorithm was desing as an improvement of the basic $k-$NN and $k^{th}-$NN algorithms whose neighborhoods are defined by proximity 
-$N_k(x):= ${ $x_i \in \chi: d(x,x_i) \leq d(x,x_{i+1}) \wedge k=1,...,k $}
+LOF algorithm [GU16] was desing as an improvement of the basic $k-$NN and $k^{th}-$NN algorithms. 
 
-Rougly speaking, LOF algorithm computes a cost function based on how much distance there is between $x$ and its $k$ nearest neighbors $x_1,...,x_k$. These in turn have their own $k$ nearest neighbors and so their cost distance associated. Finally, a certain function $f$, here called LOF, compares this cost of $x$ with the cost associated to each neighbor one by one. 
+LOF algorithm starts to compute a cost function called Local Reachability Distance $LRD(x)= \left ( \frac{1}{k}\sum_{i=1}^{k}d(x,x_i) \right )^{-1}$. The $LRD$ quantities may be seen as the inverse of the values given by the $k-$NN algorithm but the idea is to compute the *local density* of every point for a subsequent comparisson set by the $f$ function, here defined as $LOF(x)= \frac{1}{k}\sum_{i=1}^{k}\frac{LDR(x_i)}{LDR(x)}$. In this case the more $LOF(x) \approx 1$ the more normal a point is.  
 
 Aunque LOF aparenta ser el algoritmo definitivo no se tardó en encontrar situaciones donde su desempeño era pobre. En la figura 2  se tienen las siguientes condiciones: \cite{tang2002enhancing}\\
 
