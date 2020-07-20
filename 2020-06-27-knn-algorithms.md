@@ -7,21 +7,16 @@ published: true
 ## $k-$NN Algorithms and how they may fail
 
 [GU16]
+[TCFC02]
 
 Let $\chi$ be our data set and $d$ a metric over $\chi$. 
 
-$k-$NN type algoritms [GU16] rely on the **Similarity on Nearby Behavior** principle which means that the common behavior is said to be strongly related to small distances within points inside big masses or cores and outliers are labeled because of their *evident distancing* from them. An *anomaly score* is computed for every $x \in \chi$, whose value is given by some function $f$ and the set $N_k(x):= ${ $x_i \in \chi: d(x,x_i) \leq d(x,x_{i+1}) \wedge k=1,...,k $} of the $k-$nearest neighbors. 
+$k-$NN type algoritms [GU16] rely on the **Similarity on Nearby Behavior** principle which means that the common behavior is said to be strongly related to small distances within points inside big masses or cores and outliers are labeled because of their *evident distancing* from them. An *anomaly score* is computed for every $x \in \chi$, whose value is given by some function $f$ and some variation of the set $N_k(x):= ${ $x_i \in \chi: d(x,x_i) \leq d(x,x_{i+1}) \wedge k=1,...,k $} of the $k-$nearest neighbors. 
 
 The Nearest Neighbors simplest models are $k-$NN and $k^{th}-$NN. $k-$NN algorithm sets the $f$ function simply by computing the average distance from $x$ to its neighbors in $N_k(x)$, that is $f(x)=\frac{1}{k}\sum_{i=1}^{k}d(p,x_i)$; and $k^{th}-$NN algorithm chooses the distance to the farthest neighbor $f(x)=d(x, x_{k})$. Once the anomaly score is computed for every point $x$, the expert selects a real threshold $L>0$ in order to compare the scores and decide which one to label to an outlier. 
 
-Other algorithms don't use a threshold but a counting approach to deal with labeling. The Distance Based algorithm 
+Other algorithms select the threshold in a different way. For example, the $DB(n,r)-$outlier algorithm [TCFC02] a point $x$ is said to be outlier with respect to $n$ and $r$ if the ball $B_{r}(x)=${ $y : d(x,y)<r$ } contains less than $n$ elements. 
 
-
-Any $k-$NN algorithm can be described by the way it complete the next three processes: 
-
-- Definition of a neighborhood $N_{k}(x)$ for every point $x \in \chi$.
-- Computing of the average behavior inside this neighborhood by means of a certain function $f$ over $N_{k}(x)$.
-- Comparisson of the $f$ values.
 
 ### Local Outlier Factor (LOF) 
 
