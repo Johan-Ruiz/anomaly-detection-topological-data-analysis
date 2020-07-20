@@ -29,10 +29,12 @@ If a blue point is removed, the connected component assembled by normal dots wil
 The previous analysis shows how anomalies can be characterize by the topological changes they induce. Formally speaking, point extraction leads to point cloud deformations whose topology is then summarized using Persistent Diagrams. Finally, applying Bottleneck Distance, each diagram is compared to the original point cloud topology. It shoud be emphasized every deformation means topological changes from the original shape, even if the come from normal points, howerever its asociated variation creates a pettern whose outline is easy to recognize and then outliers are far away from this *mean variation*.
 
 ### Contents
-- $k-$NN Algorithms and how they may fail
-	- Local Outlier Factor (LOF) Algorithm
-    - Connectivity-Based Outlier Factor (COF) Algorithm
+- [Nearest Neighbor Algorithms](https://johan-ruiz.github.io/anomaly-detection-topological-data-analysis/2020-06-27-knn-algorithms/)
+  - Small algortihms
+  - Local Outlier Factor (LOF) Algorithm
+  - Connectivity-Based Outlier Factor (COF) Algorithm
+  - How they may fail
 - What´s TDA and how it works
 	- Computing Persistent Homology
-    - Bottleneck Distance
+  - Bottleneck Distance
 - The model
