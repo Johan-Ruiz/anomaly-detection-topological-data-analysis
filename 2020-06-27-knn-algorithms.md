@@ -22,7 +22,9 @@ Other algorithms select the threshold in a different way. For example, the $DB(n
 
 LOF algorithm [GU16] was desing as an improvement of the basic $k-$NN and $k^{th}-$NN algorithms. 
 
-LOF algorithm starts to compute a cost function called Local Reachability Distance $LRD(x)= \left ( \frac{1}{k}\sum_{i=1}^{k}d(x,x_i) \right )^{-1}$. The $LRD$ quantities may be seen as the inverse of the values given by the $k-$NN algorithm but the idea is to compute the *local density* of every point for a subsequent comparisson set by the $f$ function, here defined as $LOF(x)= \frac{1}{k}\sum_{i=1}^{k}\frac{LDR(x_i)}{LDR(x)}$. In this case the more $LOF(x) \approx 1$ the more normal a point is.  
+Once $N_k(x)$ set is calculated LOF algorithm starts to compute a cost function called Local Reachability Distance $LRD(x)= \left ( \frac{1}{k}\sum_{i=1}^{k}d(x,x_i) \right )^{-1}$. The $LRD$ quantities may be seen as the inverse of the values given by the $k-$NN algorithm but the idea is to compute the *local density* of every point for a subsequent comparisson set by the $f$ function, here defined as $LOF(x)= \frac{1}{k}\sum_{i=1}^{k}\frac{LDR(x_i)}{LDR(x)}$. Observe how the normal behavior is explicity related to the local densities of the neighbors. In this case the more $LOF(x) \approx 1$, the more normal a point is.  
+
+##  
 
 Aunque LOF aparenta ser el algoritmo definitivo no se tardó en encontrar situaciones donde su desempeño era pobre. En la figura 2  se tienen las siguientes condiciones: \cite{tang2002enhancing}\\
 
