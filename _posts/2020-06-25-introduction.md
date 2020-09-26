@@ -39,9 +39,4 @@ The previous analysis shows how anomalies can be characterize by the topological
   - Bottleneck Distance
 - The model
 
- 
-<center>
-<img src="https://user-images.githubusercontent.com/67338552/86149156-33478100-bac1-11ea-90ef-e990eadf6972.png" height="200" width="400">
-</center>
-
-<a href="https://github.com/Johan-Ruiz/anomaly-detection-topological-data-analysis/files/5287294/TesisArticle.3.pdf" download>Main document</a>
+To getthe main document click in <a href="https://github.com/Johan-Ruiz/anomaly-detection-topological-data-analysis/files/5287294/TesisArticle.3.pdf" download>here</a>.
